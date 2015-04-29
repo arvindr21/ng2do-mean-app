@@ -24,12 +24,12 @@ function _sendRequest(url: string, payLoad: any, type: string): Promise {
                 if (req.status == 200) {
                     resolve(JSON.parse(req.response));
                 } else {
-                    reject(new Error(JSON.parse(req.response)));
+                    reject(JSON.parse(req.response));
                 }
             };
 
             req.onerror = function() {
-                reject(Error(JSON.parse(req.response)));
+                reject(JSON.parse(req.response));
             };
 
             if (payLoad) {
