@@ -1,0 +1,29 @@
+<div class="row col-md-12">
+    <h1 class="text-center">M.E.A.N. Todo App with Angular 2.0</h1>
+    <hr>
+    <div class="row col-md-12">
+        <div>
+            <input class="form-control input-lg" placeholder="Add a Todo" autofocus #todotext (keyup)="addTodo($event, todotext)">
+        </div>
+    </div>
+    <div class="row col-md-12 todos">
+        <br>
+        <div class="alert alert-info text-center" [hidden]="todos.length > 0">
+            <h3>No Todos yet!</h3>
+        </div>
+        <div *for="#todo of todos" class="col-md-12 col-sm-12 col-xs-12 todo" [class.strike]="todo.isCompleted">
+            <div class="col-md-1 col-sm-1 col-xs-1">
+                <input type="checkbox" [checked]="todo.isCompleted" (click)="updateStatus(todo)">
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <span [class.hidden]="todo.isEditMode">{{todo.text}}</span>
+                <input [class.hidden]="!todo.isEditMode" type="text" [value]="todo.text" (keypress)="updateTodoText($event, todo);">
+                <input [class.hidden]="!todo.isEditMode" type="button" class="btn btn-warning" value="Cancel" (click)="setEditState(todo, false)" />
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <input type="button" class="btn btn-info" [class.disabled]="todo.isCompleted" class="pull-right" value="Edit" (click)="setEditState(todo, true)" />
+                <input type="button" class="btn btn-danger" class="pull-right" value="Delete" (click)="deleteTodo(todo)" />
+            </div>
+        </div>
+    </div>
+</div>
