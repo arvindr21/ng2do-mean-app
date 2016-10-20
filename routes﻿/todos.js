@@ -54,6 +54,7 @@ router.put('/todo/:id', function(req, res, next) {
     if (todo.isCompleted) {
         updObj.isCompleted = todo.isCompleted;
     }
+
     if (todo.text) {
         updObj.text = todo.text;
     }
@@ -74,8 +75,6 @@ router.put('/todo/:id', function(req, res, next) {
             }
         });
     }
-
-
 });
 
 /* DELETE a Todo */
@@ -89,7 +88,6 @@ router.delete('/todo/:id', function(req, res) {
             res.json(result);
         }
     });
-
 });
 
 module.exports = router;
