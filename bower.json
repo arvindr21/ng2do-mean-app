@@ -3,7 +3,7 @@
   "description": "Developing a MEAN app with Angular 2.0",
   "main": "server.js",
   "authors": [
-      "Arvind Ravulavaru <arvind.ravulavaru@gmail.com>"
+    "Arvind Ravulavaru <arvind.ravulavaru@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -11,7 +11,7 @@
     "MEAN"
   ],
   "moduleType": [
-      "es6"
+    "es6"
   ],
   "version": "0.1.0",
   "ignore": [
