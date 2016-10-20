@@ -1,0 +1,28 @@
+node_modules
+.idea
+
+# compiled output
+/public/vendor/my-app/dist
+/public/vendor/my-app/tmp
+
+# dependencies
+bower_components
+
+# IDEs and editors
+/.idea
+
+# misc
+/public/vendor/my-app/.sass-cache
+/public/vendor/my-app/connect.lock
+/public/vendor/my-app/coverage/*
+/public/vendor/my-app/lib/peerconnection.log
+/public/vendor/my-app/npm-debug.log
+/public/vendor/my-app/testem.log
+/public/vendor/my-app/typings
+
+# e2e
+/public/vendor/my-app/e2e/*.js
+/public/vendor/my-app/e2e/*.map
+
+#System Files
+.DS_Store

@@ -1,14 +1,19 @@
 {
   "name": "ng2do-mean-app",
-  "version": "0.1.0",
-  "authors": [
-    "Arvind Ravulavaru <arvind.ravulavaru@gmail.com>"
-  ],
   "description": "Developing a MEAN app with Angular 2.0",
-  "moduleType": [
-    "es6"
+  "main": "server.js",
+  "authors": [
+      "Arvind Ravulavaru <arvind.ravulavaru@gmail.com>"
   ],
   "license": "MIT",
+  "keywords": [
+    "angular 2",
+    "MEAN"
+  ],
+  "moduleType": [
+      "es6"
+  ],
+  "version": "0.1.0",
   "ignore": [
     "**/.*",
     "node_modules",
