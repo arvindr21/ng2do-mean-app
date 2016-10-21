@@ -1,5 +1,6 @@
 node_modules
 .idea
+npm-debug.log
 
 # compiled output
 /public/vendor/my-app/dist
