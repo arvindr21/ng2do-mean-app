@@ -1,0 +1,52 @@
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    font-family: calibri;
+}
+.strike span {
+    text-decoration: line-through;
+    color: #ccc;
+}
+.todos {
+    padding: 20px;
+}
+.todo {
+    padding: 10px;
+    font-size: 21px;
+    border-bottom: 1px solid;
+}
+.todo .btn {
+    margin-left: 5px;
+    width: 72px;
+}
+.todo:hover {
+    background: #e7e7e7;
+}
+@media (max-width: 991px) {
+    .todo .btn {
+        margin-bottom: 10px;
+    }
+    .todo input[type=checkbox] {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .todo .btn-warning {
+        margin-top: 10px;
+        margin-left: 0px
+    }
+}
+@media (max-width: 450px) {
+    .todo .col-xs-8 {
+        width: 85%;
+    }
+    .todo .col-xs-3 {
+        width: 100%;
+        text-align: center;
+        border-top: 1px dashed #aaa;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+}
